@@ -917,6 +917,7 @@ dependencies = [
     { name = "faiss-cpu" },
     { name = "fastapi" },
     { name = "langchain" },
+    { name = "langchain-chroma" },
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-google-genai" },
@@ -953,6 +954,7 @@ requires-dist = [
     { name = "faiss-cpu", specifier = ">=1.15.1" },
     { name = "fastapi", specifier = ">=0.162.0" },
     { name = "langchain" },
+    { name = "langchain-chroma", specifier = ">=1.2.0" },
     { name = "langchain-community", specifier = ">=0.4.2" },
     { name = "langchain-core", specifier = ">=1.7.4" },
     { name = "langchain-google-genai", specifier = ">=4.4.2" },
@@ -1498,6 +1500,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/69/be/4804ba5dcc3fbe50c674e90f1eef5188f2227f4430b7deece7e150ef498a/langchain-1.4.8.tar.gz", hash = "sha256:66649bcf64650235032ca8e25586a263b68b77a0232bb51e87c129e6a5d8e1b2", size = 769415, upload-time = "2026-11-02T15:44:46.926Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5e/9c/fce50ccf34389a69125120c018dc9a1a4ca436149eddc7145ab49ca30bc3/langchain-1.4.8-py3-none-any.whl", hash = "sha256:31ddb8688db67f9eb1fd4e77594573ef863b2e3c086397273d4a7a3ff4245b45", size = 170580, upload-time = "2026-11-02T15:44:45.251Z" },
+]
+
+[[package]]
+name = "langchain-chroma"
+version = "1.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "chromadb" },
+    { name = "langchain-core" },
+    { name = "numpy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e1/b3/37eb7a9a12c4d49bb3bd07ffc40d0fcdfeaeb9f6a6c2b428afee69ee6694/langchain_chroma-1.2.0.tar.gz", hash = "sha256:609c8b554ce9d11e99db8520fed021c5dbbcf525bd6ae04707a87d0147d142fa", size = 186924, upload-time = "2026-11-23T17:04:38.196Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/90/04/ef72ea667882268227ffeafc27882b1e7ae75bde03db4407db1802ab5e7b/langchain_chroma-1.2.0-py3-none-any.whl", hash = "sha256:54e7c8e1b347c1f8bc6becdc641410f8947629a013b70ca58a51330bfcdcbd2c", size = 13536, upload-time = "2026-11-23T17:04:37.48Z" },
 ]
 
 [[package]]
